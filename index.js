@@ -5,5 +5,5 @@ function logDriversByHometown(drivers,hometown){
   logDriverNames(drivers.filter(function(driver){return driver.hometown === hometown}))
 }
 function driversByRevenue(drivers){
-  drivers.sort(function(driver){return driver.revenue})
+  drivers.sort(function(driver1,driver2){return driver1.revenue - driver2.revenue})
 }
