@@ -12,6 +12,11 @@ function driversByName(drivers){
   let newDrivers = [...drivers]
   return newDrivers.sort(function(a,b){return a.name.localeCompare(b.name)})
 }
+function totalRevenue(drivers){
+  let revenue = 0
+  drivers.forEach(function(driver){revenue += driver.revenue})
+  return revenue
+}
 function averageRevenue(drivers){
 
 }
