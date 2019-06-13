@@ -6,7 +6,7 @@ function logDriversByHometown(drivers,hometown){
 }
 function driversByRevenue(drivers){
   let newDrivers = [...drivers]
-  return newDrivers.sort(function(driver1,driver2){return driver1.revenue - driver2.revenue})
+  return newDrivers.sort(function(a,b){return a.revenue - b.revenue})
 }
 function driversByName(drivers){
   let newDrivers = [...drivers]
